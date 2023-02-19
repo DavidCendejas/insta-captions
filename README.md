@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+![issues](https://img.shields.io/github/issues/DavidCendejas/insta-captions)
+
 insta-captions is a tool that will allow for the instant transcription and translation of audio files to and from different languages.
 
 ## Overview
