@@ -14,3 +14,9 @@ The main feature that I envision for this project would be for audio to be conve
 
 - given an audio file, convert that audio into text of language it is in
 - given text of one language, translate into another
+
+## Installation and Running
+
+insta-captions transcriptions are possible with [DeepSpeech](https://github.com/mozilla/DeepSpeech). For installation of DeepSpeech, refer to their [documentation](https://deepspeech.readthedocs.io/en/r0.9/?badge=latest). I use their [pre-trained models](https://github.com/mozilla/DeepSpeech/releases/tag/v0.9.3) on english and mandarin. These models are not included in this repository due to file size, and must be downloaded separately and placed in the src/language_models folder (both the model and the scorer). The optimal alpha and beta values for each respective language were found here as well.
+
+Additional libraries used are numpy to convert the buffer of the .wav files into int16 numpy arrays as this is what DeepSpeech speech-to-text accepts.
