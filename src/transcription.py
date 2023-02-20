@@ -55,12 +55,11 @@ def transcribe(wav_files, language='english'):
 
         transcriptions = []
 
-        for audio in wav_files:
+        for audiofile in wav_files:
             try:
-                filename = os.path.splitext(os.path.basename(audio))[0]
                 # with open('transcriptions/{}.txt'.format(filename), 'w') as fp:
-                transcription = wav_to_text(model, audio)
-                transcriptions.append(transcription)
+                transcription = wav_to_text(model, audiofile)
+                transcriptions.append((audiofile, transcription))
                     # fp.write(transcription)
             except:
                 print('Invalid File')
