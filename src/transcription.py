@@ -53,13 +53,18 @@ def transcribe(wav_files, language='english'):
             alphabeta[language]['beta'])
         model.setBeamWidth(beam_width)
 
+        transcriptions = []
+
         for audio in wav_files:
             try:
                 filename = os.path.splitext(os.path.basename(audio))[0]
                 with open('transcriptions/{}.txt'.format(filename), 'w') as fp:
                     transcription = wav_to_text(model, audio)
-                    fp.write(transcription)
+                    transcriptions.append(transcription)
+                    # fp.write(transcription)
             except:
                 print('Invalid File')
+        
+        return transcriptions
 
 transcribe(['audio/english_examples/8455-210777-0068.wav'], 'english')
