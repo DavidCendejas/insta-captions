@@ -3,13 +3,13 @@ import wave
 from deepspeech import Model as dsm
 
 models = {
-    "english": "../data/language_models/deepspeech-0.9.3-models.pbmm",
-    "mandarin": "../data/language_models/deepspeech-0.9.3-models-zh-CN.pbmm",
+    "english": "data/language_models/deepspeech-0.9.3-models.pbmm",
+    "mandarin": "data/language_models/deepspeech-0.9.3-models-zh-CN.pbmm",
 }
 
 lm = {
-    "english": "../data/language_models/deepspeech-0.9.3-models.scorer",
-    "mandarin": "../data/language_models/deepspeech-0.9.3-models-zh-CN.scorer",
+    "english": "data/language_models/deepspeech-0.9.3-models.scorer",
+    "mandarin": "data/language_models/deepspeech-0.9.3-models-zh-CN.scorer",
 }
 
 alphabeta = {

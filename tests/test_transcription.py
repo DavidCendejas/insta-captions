@@ -92,3 +92,13 @@ class TestTranscribe(unittest.TestCase):
 
         text = wav_to_text(model, "data/audio/chinese_examples/myname.wav")
         self.assertNotEqual(text, "")
+
+    def test_english_integration(self):
+        wavs = [
+            "data/audio/english_examples/2830-3980-0043.wav",
+            "data/audio/english_examples/4507-16021-0012.wav",
+            "data/audio/english_examples/8455-210777-0068.wav",
+        ]
+
+        texts = transcribe(wavs, "english")
+        self.assertEqual(len(texts), 3)

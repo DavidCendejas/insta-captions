@@ -13,3 +13,12 @@ lints: lint
 
 format:  ## run autoformatting with black
 	python -m black src tests setup.py
+
+#########
+# TESTS #
+#########
+test: ## clean and run unit tests
+	python -m unittest tests.test_transcription
+
+coverage:  ## clean and run unit tests with coverage
+	python -m coverage run -m unittest tests.test_transcription && python -m coverage report
