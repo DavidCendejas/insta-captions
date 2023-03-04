@@ -6,7 +6,7 @@
 
 lint:  ## run static analysis with flake8
 	python -m black --check src tests setup.py
-	python -m flake8 src tests setup.py
+	python -m flake8 --per-file-ignores="__init__.py:F401" src tests setup.py
 
 # Alias
 lints: lint

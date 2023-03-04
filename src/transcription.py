@@ -63,6 +63,3 @@ def transcribe(wav_files, language="english"):
                 print("Invalid File")
 
         return transcriptions
-
-
-transcribe(["../data/audio/english_examples/8455-210777-0068.wav"], "english")
