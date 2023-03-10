@@ -12,7 +12,7 @@ authors = [{name = "davidcendejas", email = "david.cendejas@columbia.edu"}]
 description="insta-captions is a tool that will allow for the instant transcription and translation of audio files to and from different languages."
 readme = "README.md"
 version = "0.1.0"
-requires-python = "3.7"
+requires-python = "~3.7"
 
 dependencies = [
     "deepspeech>=0.9.3",
