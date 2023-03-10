@@ -48,9 +48,7 @@ def transcribe(wav_files, language="english"):
 
         model = dsm(models[language])
         model.enableExternalScorer(lm[language])
-        model.setScorerAlphaBeta(
-            alphabeta[language]["alpha"], alphabeta[language]["beta"]
-        )
+        model.setScorerAlphaBeta(alphabeta[language]["alpha"], alphabeta[language]["beta"])
         model.setBeamWidth(beam_width)
 
         transcriptions = []
