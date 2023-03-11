@@ -50,7 +50,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: pytest-results-${{ matrix.os }}-${{ matrix.python-version }}
-        path: ./
+        path: python_junit.xml
       if: ${{ always() }}
     - name: Upload coverage
       uses: codecov/codecov-action@v3
