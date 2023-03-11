@@ -4,6 +4,9 @@
 
 ![issues](https://img.shields.io/github/issues/DavidCendejas/insta-captions)
 
+[![Build Status](https://github.com/DavidCendejas/insta-captions/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/DavidCendejas/insta-captions/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/DavidCendejas/insta-captions/branch/main/graph/badge.svg?token=Z2HN4RCJGZ)](https://codecov.io/gh/DavidCendejas/insta-captions)
+
 insta-captions is a tool that will allow for the instant transcription and translation of audio files to and from different languages.
 
 ## Overview
