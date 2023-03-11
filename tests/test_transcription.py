@@ -49,9 +49,8 @@ class TestTranscribe(unittest.TestCase):
         language = "english"
         model = dsm(models[language])
         model.enableExternalScorer(lm[language])
-        model.setScorerAlphaBeta(
-            alphabeta[language]["alpha"], alphabeta[language]["beta"]
-        )
+
+        model.setScorerAlphaBeta(alphabeta[language]["alpha"], alphabeta[language]["beta"])
         model.setBeamWidth(beam_width)
 
         text = wav_to_text(model, "tests/testempty16.wav")
@@ -61,9 +60,7 @@ class TestTranscribe(unittest.TestCase):
         language = "mandarin"
         model = dsm(models[language])
         model.enableExternalScorer(lm[language])
-        model.setScorerAlphaBeta(
-            alphabeta[language]["alpha"], alphabeta[language]["beta"]
-        )
+        model.setScorerAlphaBeta(alphabeta[language]["alpha"], alphabeta[language]["beta"])
         model.setBeamWidth(beam_width)
 
         text = wav_to_text(model, "tests/testempty16.wav")
@@ -73,9 +70,7 @@ class TestTranscribe(unittest.TestCase):
         language = "english"
         model = dsm(models[language])
         model.enableExternalScorer(lm[language])
-        model.setScorerAlphaBeta(
-            alphabeta[language]["alpha"], alphabeta[language]["beta"]
-        )
+        model.setScorerAlphaBeta(alphabeta[language]["alpha"], alphabeta[language]["beta"])
         model.setBeamWidth(beam_width)
 
         text = wav_to_text(model, "data/audio/english_examples/8455-210777-0068.wav")
@@ -85,9 +80,7 @@ class TestTranscribe(unittest.TestCase):
         language = "mandarin"
         model = dsm(models[language])
         model.enableExternalScorer(lm[language])
-        model.setScorerAlphaBeta(
-            alphabeta[language]["alpha"], alphabeta[language]["beta"]
-        )
+        model.setScorerAlphaBeta(alphabeta[language]["alpha"], alphabeta[language]["beta"])
         model.setBeamWidth(beam_width)
 
         text = wav_to_text(model, "data/audio/chinese_examples/myname.wav")
