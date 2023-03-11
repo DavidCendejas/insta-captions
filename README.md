@@ -20,3 +20,9 @@ The main feature that I envision for this project would be for audio to be conve
 insta-captions transcriptions are possible with [DeepSpeech](https://github.com/mozilla/DeepSpeech). For installation of DeepSpeech, refer to their [documentation](https://deepspeech.readthedocs.io/en/r0.9/?badge=latest). I use their [pre-trained models](https://github.com/mozilla/DeepSpeech/releases/tag/v0.9.3) on english and mandarin. These models are not included in this repository due to file size, and must be downloaded separately and placed in the src/language_models folder (both the model and the scorer). The optimal alpha and beta values for each respective language were found here as well.
 
 Additional libraries used are numpy to convert the buffer of the .wav files into int16 numpy arrays as this is what DeepSpeech speech-to-text accepts.
+
+## make commands
+- `make format`: autoformat this library using `black`
+- `make lint`: perform static analysis of this library with `flake8` and `black`
+- `make test`: run automated tests with `unittest`
+- `make coverage`: run automated tests with `unittest` and collect coverage information
