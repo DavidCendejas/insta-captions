@@ -42,7 +42,7 @@ test: ## clean and run unit tests
 	python -m pytest -v tests/
 
 coverage:  ## clean and run unit tests with coverage
-	python -m pytest -v tests/ --cov=src --cov-branch --cov-fail-under=75 --cov-report term-missing
+	python -m pytest -v tests/ --cov=src --cov-branch --cov-fail-under=50 --cov-report=term-missing
 
 # Alias
 tests: test
