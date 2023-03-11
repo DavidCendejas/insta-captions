@@ -49,6 +49,7 @@ class TestTranscribe(unittest.TestCase):
         language = "english"
         model = dsm(models[language])
         model.enableExternalScorer(lm[language])
+
         model.setScorerAlphaBeta(alphabeta[language]["alpha"], alphabeta[language]["beta"])
         model.setBeamWidth(beam_width)
 
